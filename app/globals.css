@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.bg-sdc {
+  background-color: #016686;
+}
+.text-sdc {
+  color: #016686;
+}
+.bg-sdc2 {
+  background-color: #F2B705;
+}
+.text-sdc2 {
+  color: #F2B705;
+}
+.hover-text-sdc2:hover {
+  color: #F2B705;
+}
