@@ -21,7 +21,7 @@ interface ChallangesGridProps {
 const defaultActivities: Activity[] = [
   {
     id: "1",
-    subject: "SDC Technical Challange",
+    subject: "SDC Technical Challenge",
     imageUrl: "/Challanges/technicalChallenge.jpg",
     desc: "Illegal fishing is one of the biggest threats to marine ecosystems in Tunisia. It destroys fish populations, harms protected marine habitats, and affects the livelihoods of local fishermen. This challenge aims to develop a technical solution to detect, monitor, or prevent illegal fishing using innovative technology while ensuring sustainability and alignment with the United Nations Sustainable Development Goals (SDGs).",
     linkS: "https://drive.google.com/file/d/11ihXiXcsBRH11BMrshju8aq7V1f-VgBo/view",
@@ -29,7 +29,7 @@ const defaultActivities: Activity[] = [
   },
   {
     id: "2",
-    subject: "SDC Non Technical Challange",
+    subject: "SDC Non Technical Challenge",
     imageUrl: "/Challanges/nonTechnical.jpg",
     desc: "The SDC 3.0 Non-Tech Challenge is an opportunity for IEEE SIGHT Student Branch Groups to present their activities, projects, and SDC 4.0 proposal to host the next edition of this event. This challenge allows SBs and SIGHT Groups to highlight their projects, innovation, and dedication to using technology for a better future.",
     linkS: "https://drive.google.com/file/d/1pgUmXbAdm0eIA4z1HCDQsqGDiJgDRRyJ/view",

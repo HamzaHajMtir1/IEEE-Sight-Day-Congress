@@ -11,7 +11,7 @@ function HeroSection() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-04-30T08:00:00');
+    const targetDate = new Date('2025-04-19T08:00:00');
 
     const calculateTimeLeft = () => {
       const now = new Date();
