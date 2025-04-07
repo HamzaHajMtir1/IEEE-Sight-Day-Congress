@@ -30,7 +30,7 @@ export function AboutSection() {
           >
             <Card className="bg-gray-100 shadow-lg rounded-lg transition-all duration-500 hover:scale-105 hover:bg-yellow-100 hover:shadow-xl flex flex-col w-full">
               <CardHeader>
-                <CardTitle className="text-sdc">IEEE Sight Day Congress</CardTitle>
+                <CardTitle className="text-sdc">Sight Day Congress</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col mb-4">
                 <div className="flex items-center justify-center mb-4">
@@ -43,7 +43,7 @@ export function AboutSection() {
                   />
                 </div>
                 <p className="text-gray-700">
-                  The SDC 3.0 SIGHT Group Annual Congress, hosted by the IEEE ISIMM SIGHT Group, 
+                  The <strong>Sight Day Congress Annual Congress</strong>, hosted by the IEEE ISIMM SIGHT Group, 
                   marked a significant milestone as they were announced the winner of the 
                   Non-Technical Challenge for the previous edition. The event, themed 'Marine Life', 
                   brought together SIGHT groups from across the Tunisia Section to share knowledge, 
