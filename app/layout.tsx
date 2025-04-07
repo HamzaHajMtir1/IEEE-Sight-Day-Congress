@@ -23,8 +23,8 @@ const navigation = [
 ];
 
 export const metadata: Metadata = {
-  title: "IEEE SIGHT DAY CONGRESS",
-  description: "IEEE SIGHT DAY CONGRESS",
+  title: "SIGHT DAY CONGRESS",
+  description: "The Sight Day Congress (SDC 3.0) is the annual congress of all SIGHT groups in the Tunisia section, and this edition is proudly hosted by SIGHT Group ISIMM SB, IEEE ISIMM SB, and IEEE SIGHT Group Tunisia Section.",
 };
 
 export default function RootLayout({

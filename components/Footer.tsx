@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="w-full py-6 md:py-0 bg-sdc3 text-white">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4 md:h-24 px-4 md:px-6 max-w-7xl mx-auto">
         <p className="text-center text-sm leading-loose md:text-left">
-          © {new Date().getFullYear()} IEEE Sight Day Congress. All rights reserved.
+          © {new Date().getFullYear()} Sight Day Congress. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a href="https://www.facebook.com/share/16PsYXB8GU/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-blue-400 transition-colors">

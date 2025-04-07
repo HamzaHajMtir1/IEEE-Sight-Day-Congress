@@ -25,13 +25,13 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1 items-center">
           <a href="/" className="-m-1.5 p-1.5 flex items-center">
-            <span className="sr-only">IEEE SIGHT Day Congress</span>
+            <span className="sr-only">SIGHT Day Congress</span>
             <img
               alt="IEEE SDC Logo"
               src="/favicon.ico"
               className="h-16 w-auto"
             />
-            <h2 className="ml-3 text-xl font-bold text-gray-100">IEEE SIGHT Day Congress</h2>
+            <h2 className="ml-3 text-xl font-bold text-gray-100">SIGHT Day Congress</h2>
           </a>
         </div>
         <div className="flex lg:hidden">
