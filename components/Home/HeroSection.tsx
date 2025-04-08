@@ -45,7 +45,6 @@ function HeroSection() {
           filter: 'brightness(0.7)'
         }}
       />
-      
       {/* Content */}
       <div className="relative z-10 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-wider">

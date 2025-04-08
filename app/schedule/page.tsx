@@ -39,7 +39,7 @@ export default function ComingSoon() {
   return (
     <div className="min-h-screen bg-blue-900 relative overflow-hidden flex flex-col">
       <Head>
-        <title>Coming Soon - IEEE SIGHT Day Congress</title>
+        <title>Coming Soon - SIGHT Day Congress</title>
         <meta name="description" content="IEEE SIGHT Day Congress is coming soon. Stay tuned for our challenges and events." />
       </Head>
       
@@ -57,18 +57,8 @@ export default function ComingSoon() {
       {/* Content */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-16">
         {/* Logo */}
-        <div className="mb-8">
-          <Image 
-            src="/images/sdc-logo.png" 
-            alt="SDC Logo" 
-            width={180} 
-            height={180}
-            className="animate-pulse"
-          />
-        </div>
-        
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
-          IEEE SIGHT Day Congress
+          SIGHT Day Congress
         </h1>
         
         <div className="bg-blue-800/40 backdrop-blur-sm p-4 rounded-lg border border-blue-400/30 mb-8 max-w-2xl">
