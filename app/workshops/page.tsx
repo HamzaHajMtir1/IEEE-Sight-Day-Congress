@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { FaEnvelope, FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function ComingSoon() {
   const [timeLeft, setTimeLeft] = useState({
