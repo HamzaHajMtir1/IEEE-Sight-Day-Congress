@@ -5,36 +5,6 @@ import Image from 'next/image';
 import { FaEnvelope, FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function ComingSoon() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-
-  useEffect(() => {
-    // Set the date we're counting down to (adjust this to your event date)
-    const countDownDate = new Date("2024-06-15T00:00:00").getTime();
-
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countDownDate - now;
-      
-      if (distance < 0) {
-        clearInterval(timer);
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      } else {
-        setTimeLeft({
-          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((distance % (1000 * 60)) / 1000)
-        });
-      }
-    }, 1000);
-    
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="min-h-screen bg-blue-900 relative overflow-hidden flex flex-col">
