@@ -1,7 +1,7 @@
 'use client';
 
 import { Facebook, Instagram,} from "lucide-react";
-import { BackToTop } from "./BackToTop";
+
 
 
 export const Footer = () => {
@@ -22,7 +22,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <BackToTop />
+  
     </footer>
   );
 };
