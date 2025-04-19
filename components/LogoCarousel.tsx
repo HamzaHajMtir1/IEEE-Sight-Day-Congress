@@ -46,20 +46,20 @@ const LogoCarousel: React.FC<LogoCarouselProps> = ({ logos }) => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full py-12 bg-sdc3 backdrop-blur-sm">
+    <div className="hidden sm:block w-full py-12 bg-sdc3 backdrop-blur-sm">
+      {/* Carousel is hidden on mobile (sm:hidden) and visible on larger screens (sm:block) */}
       <div className="container mx-auto px-4">
         <h3 className="text-4xl font-bold text-white mb-4 drop-shadow-lg text-center">Our Partners</h3>
 
-        
         <div className="relative overflow-hidden">
-          <div 
+          <div
             ref={carouselRef}
             className="flex transition-transform duration-1000 ease-in-out"
             style={{ width: `${(logosToUse.length / visibleLogos) * 100}%` }}
           >
             {logosToUse.map((logo) => (
-              <div 
-                key={logo.id} 
+              <div
+                key={logo.id}
                 className="flex items-center justify-center px-4"
                 style={{ width: `${100 / logosToUse.length}%` }}
               >
