@@ -17,8 +17,6 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Challenges', href: '/challanges' },
   { name: 'Speakers', href: '/speakers' },
-  { name: 'Workshops', href: '/workshops' },
-  { name: 'Schedule', href: '/schedule' },
   { name: 'Venue', href: '/venue' },
 ];
 

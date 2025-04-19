@@ -14,7 +14,7 @@ const MemoriesSection = () => {
   return (
     <section className="py-16 px-4 bg-sdc">
       <div className="container mx-auto">
-      <h3 className="text-4xl font-bold text-white drop-shadow-lg text-center">Event Gallery</h3>
+      <h3 className="text-4xl font-bold text-sdc2 drop-shadow-lg text-center">Event Gallery</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-12">
           {/* First row */}

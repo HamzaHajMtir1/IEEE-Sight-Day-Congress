@@ -7,57 +7,38 @@ import { Footer } from '@/components/Footer';
 
 const speakers = [
   {
-    name: 'Sarah Johnson',
-    role: 'AI Research Director',
-    company: 'TechVision Labs',
-    topic: 'The Future of Artificial Intelligence',
-    description: 'Electronic Communication Engineer who graduated from the National School of Electronics and Telecommunications of Sfax. He is currently working as an R&D IT Engineer at AIFOG. His main job is to improve QoS in IoT networks through the latest technologies, especially AI, by conducting research and delivering high-quality proof of concepts. He is also currently serving as IEEE/ODC Event Support Coordinator, Webmaster of IEEE Consultants Network AG, and a jury member for the IEEE SSCS Arduino Contest 2025.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400',
+    name: 'Ramla BOUHLEL',
+    role: 'Engineer in fisheries and environmental engineering',
+    company: 'Project manager with notre grand blue',
+    topic: 'Eyes Under Waves',
+    description: 'Engineer in sustainable fisheries and marine environment with a Master’s degree in aquatic ecosystem ecology',
+    image: '/Speakers/ramlaBouhlel.png',
     social: {
-      twitter: '#',
-      linkedin: '#',
-      website: '#'
+      linkedin: 'https://www.linkedin.com/in/ramla-bouhlel-092477240/',
     }
   },
   {
-    name: 'Michael Chen',
-    role: 'Chief Innovation Officer',
-    company: 'Future Systems',
-    topic: 'Blockchain Revolution',
-    description: 'A pioneering technologist with over 15 years of experience in blockchain and distributed systems. Leading groundbreaking research in cryptocurrency technologies and smart contract implementations.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400',
+    name: 'Amira OUERFELLI',
+    role: 'Electrical engineer Specializing in Robotics and Embedded Systems',
+    company: 'IEEE SIGHT Tunisia Section Chair',
+    topic: 'Visionaries United',
+    description: "An electrical engineer specializing in robotics and embedded systems, this individual is also a master's student in AI and information system techniques. They serve as the IEEE SIGHT Tunisia Section Chair and are actively involved in mentoring through IEEE Entrepreneurship. Additionally, they contribute as a volunteer for IEEE Smart Village and co-chair the IEEE ISV Education Programmes Implementation, showcasing a strong commitment to innovation, education, and community development.",
+    image: '/Speakers/amiraOuerfelli.png',
     social: {
-      twitter: '#',
-      linkedin: '#',
-      website: '#'
+      linkedin: 'https://www.linkedin.com/in/amira-ouerfelli-033084269/',
     }
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'UX Design Lead',
-    company: 'DesignFlow',
-    topic: 'The Evolution of User Experience',
-    description: 'Award-winning UX designer specializing in creating intuitive and accessible digital experiences. Pioneer in implementing AI-driven design solutions and advocate for inclusive design practices.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400',
+    name: 'Mohamed Ali KRICHEN',
+    role: 'QA Automation Engineer at Sagemcom',
+    company: 'IEEE IES Tunisia Chapter Chair',
+    topic: 'IEEE Event and Project Management',
+    description: "A QA Automation Engineer at Sagemcom, this professional is also deeply engaged in the IEEE community. They serve as the IEEE SAC Congress Coordinator, Chair of the IEEE IES Tunisia Chapter, and Chair of the IEEE TSYP 12. Their roles reflect strong leadership in both the engineering field and the global IEEE network.",
+    image: '/Speakers/mohamedaliKrichen.png',
     social: {
-      twitter: '#',
-      linkedin: '#',
-      website: '#'
+      linkedin: 'https://www.linkedin.com/in/mohamedalikrichen/',
     }
   },
-  {
-    name: 'David Kim',
-    role: 'Security Expert',
-    company: 'CyberShield',
-    topic: 'Cybersecurity in 2025',
-    description: 'Renowned cybersecurity expert with expertise in threat detection and ethical hacking. Regular contributor to major security conferences and advisor to Fortune 500 companies on security infrastructure.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
-    social: {
-      twitter: '#',
-      linkedin: '#',
-      website: '#'
-    }
-  }
 ];
 
 function Modal({ isOpen, onClose, speaker }: { isOpen: boolean; onClose: () => void; speaker: typeof speakers[0] }) {
@@ -81,7 +62,7 @@ function Modal({ isOpen, onClose, speaker }: { isOpen: boolean; onClose: () => v
             />
             <div>
               <h3 className="text-2xl font-bold text-gray-900">{speaker.name}</h3>
-              <p className="text-indigo-600">{speaker.role}</p>
+              <p className="text-blue-600">{speaker.role}</p>
               <p className="text-gray-600">{speaker.company}</p>
             </div>
           </div>
@@ -92,19 +73,13 @@ function Modal({ isOpen, onClose, speaker }: { isOpen: boolean; onClose: () => v
           <div className="border-t pt-4">
             <h4 className="text-lg font-semibold text-gray-900 mb-2">Topic</h4>
             <div className="flex items-center">
-              <Mic2 className="w-5 h-5 text-indigo-600 mr-2" />
+              <Mic2 className="w-5 h-5 text-blue-600 mr-2" />
               <p className="text-gray-600">{speaker.topic}</p>
             </div>
           </div>
           <div className="flex space-x-4 mt-6 pt-4 border-t">
-            <a href={speaker.social.twitter} className="text-gray-400 hover:text-blue-400">
-              <Twitter className="w-5 h-5" />
-            </a>
             <a href={speaker.social.linkedin} className="text-gray-400 hover:text-blue-700">
               <Linkedin className="w-5 h-5" />
-            </a>
-            <a href={speaker.social.website} className="text-gray-400 hover:text-gray-600">
-              <Globe className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -119,7 +94,7 @@ function Speackers() {
   return (
     <><div className="min-h-screen bg-sdc">
       {/* Hero Section */}
-      <div className="relative bg-indigo-900 text-white py-24">
+      <div className="relative bg-blue-900 text-white py-24">
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/Home/bg_section1.jpg"
@@ -131,7 +106,7 @@ function Speackers() {
         <div className="container mx-auto px-4 relative mt-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">Meet Our Expert Speakers</h1>
-            <p className="text-xl text-indigo-200 mb-8">Join us for an extraordinary gathering of industry leaders, innovators, and visionaries who are shaping the future of technology.</p>
+            <p className="text-xl text-blue-200 mb-8">Join us for an extraordinary gathering of industry leaders, innovators, and visionaries who are shaping the future of technology.</p>
             <div className="flex gap-6">
             </div>
           </div>
@@ -140,7 +115,7 @@ function Speackers() {
 
       {/* Speakers Grid */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {speakers.map((speaker, index) => (
             <div key={index} className="bg-gray-100 hover:bg-yellow-100 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
               <div className="aspect-w-3 aspect-h-3">
@@ -151,7 +126,7 @@ function Speackers() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">{speaker.name}</h3>
-                <p className="text-indigo-600 font-medium mb-1">{speaker.role}</p>
+                <p className="text-blue-600 font-medium mb-1">{speaker.role}</p>
                 <p className="text-gray-600 text-sm mb-4">{speaker.company}</p>
                 <div className="flex items-center mb-4">
                   <Mic2 className="w-4 h-4 text-gray-400 mr-2" />
@@ -159,19 +134,13 @@ function Speackers() {
                 </div>
                 <button
                   onClick={() => setSelectedSpeaker(speaker)}
-                  className="text-indigo-600 hover:text-indigo-800 text-sm font-medium mb-4"
+                  className="text-blue-600 hover:text-blue-800 text-sm font-medium mb-4"
                 >
                   Read More
                 </button>
                 <div className="flex space-x-4 pt-4 border-t">
-                  <a href={speaker.social.twitter} className="text-gray-400 hover:text-blue-400">
-                    <Twitter className="w-5 h-5" />
-                  </a>
                   <a href={speaker.social.linkedin} className="text-gray-400 hover:text-blue-700">
                     <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a href={speaker.social.website} className="text-gray-400 hover:text-gray-600">
-                    <Globe className="w-5 h-5" />
                   </a>
                 </div>
               </div>

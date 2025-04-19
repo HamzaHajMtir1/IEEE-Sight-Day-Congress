@@ -15,7 +15,7 @@ export function AboutSection() {
           className="flex flex-col items-center justify-center space-y-4 text-center"
         >
           <div className="space-y-2">
-          <h3 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Know More About Us</h3>
+          <h3 className="text-4xl font-bold text-sdc2 mb-4 drop-shadow-lg">Know More About Us</h3>
 
           </div>
         </motion.div>
