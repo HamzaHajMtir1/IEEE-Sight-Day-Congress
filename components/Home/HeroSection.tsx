@@ -34,7 +34,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="min-h-screen relative flex items-center justify-center">
+    <div className="min-h-screen relative flex items-center justify-center px-4">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0"
@@ -46,30 +46,31 @@ function HeroSection() {
         }}
       />
       {/* Content */}
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-wider">
+      <div className="relative z-10 text-center text-white w-full max-w-4xl">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-8 tracking-wider">
           SIGHT Day Congress
         </h1>
         
-        <div className="flex gap-4 md:gap-8 justify-center">
-          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 min-w-[100px]">
-            <div className="text-3xl md:text-5xl font-bold">{timeLeft.days}</div>
-            <div className="text-sm md:text-base mt-1">Days</div>
+        {/* Grid layout for small screens, flex for larger screens */}
+        <div className="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 md:gap-8 justify-center">
+          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 min-w-[80px] sm:min-w-[100px]">
+            <div className="text-2xl sm:text-3xl md:text-5xl font-bold">{timeLeft.days}</div>
+            <div className="text-xs sm:text-sm md:text-base mt-1">Days</div>
           </div>
           
-          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 min-w-[100px]">
-            <div className="text-3xl md:text-5xl font-bold">{timeLeft.hours}</div>
-            <div className="text-sm md:text-base mt-1">Hours</div>
+          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 min-w-[80px] sm:min-w-[100px]">
+            <div className="text-2xl sm:text-3xl md:text-5xl font-bold">{timeLeft.hours}</div>
+            <div className="text-xs sm:text-sm md:text-base mt-1">Hours</div>
           </div>
           
-          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 min-w-[100px]">
-            <div className="text-3xl md:text-5xl font-bold">{timeLeft.minutes}</div>
-            <div className="text-sm md:text-base mt-1">Minutes</div>
+          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 min-w-[80px] sm:min-w-[100px]">
+            <div className="text-2xl sm:text-3xl md:text-5xl font-bold">{timeLeft.minutes}</div>
+            <div className="text-xs sm:text-sm md:text-base mt-1">Minutes</div>
           </div>
           
-          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 min-w-[100px]">
-            <div className="text-3xl md:text-5xl font-bold">{timeLeft.seconds}</div>
-            <div className="text-sm md:text-base mt-1">Seconds</div>
+          <div className="bg-black/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 min-w-[80px] sm:min-w-[100px]">
+            <div className="text-2xl sm:text-3xl md:text-5xl font-bold">{timeLeft.seconds}</div>
+            <div className="text-xs sm:text-sm md:text-base mt-1">Seconds</div>
           </div>
         </div>
       </div>
